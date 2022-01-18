@@ -2,6 +2,8 @@ import qutip as qt
 import state_perturbation_lib as spl
 
 
+# TODO: double check this expression & their parameter definitions, the plot I'm generating
+#  doesn't match what I expected
 class KhandelwalGlobalState:
 
     def __init__(self, parameter_dict):
