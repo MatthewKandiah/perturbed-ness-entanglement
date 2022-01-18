@@ -12,13 +12,13 @@ gamma_cold = 0.1
 gamma_hot = 0.001
 
 result_array = []
-plot_points_1 = [[],[]]
-plot_points_2 = [[],[]]
-plot_points_3 = [[],[]]
-plot_points_4 = [[],[]]
-plot_points_5 = [[],[]]
-for temperature_hot in plot_hot_temperatures:
-    for temperature_cold in plot_cold_temperatures:
+plot_points_1 = [[], []]
+plot_points_2 = [[], []]
+plot_points_3 = [[], []]
+plot_points_4 = [[], []]
+plot_points_5 = [[], []]
+for temperature_cold in plot_cold_temperatures:
+    for temperature_hot in plot_hot_temperatures:
         parameter_dict = {
             'epsilon': epsilon,
             'g': g,
