@@ -21,7 +21,7 @@ class KhandelwalLocalState:
         self.Gamma_hot = self.gamma_hot_plus + self.gamma_hot_minus
         self.Gamma_cold = self.gamma_cold_plus + self.gamma_cold_minus
         self.Gamma = self.Gamma_hot + self.Gamma_cold
-        self.chi = (4 * self.g ** 2 + self.Gamma_hot * self.Gamma_cold) * self.Gamma ** 2
+        self.chi = (4 * (self.g ** 2) + self.Gamma_hot * self.Gamma_cold) * (self.Gamma ** 2)
 
         # steady state from Khandelwal 2020 Eqn (6)
         r1 = (4 * self.g ** 2 * (
