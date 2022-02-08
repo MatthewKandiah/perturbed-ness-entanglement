@@ -45,3 +45,12 @@ def qobj_absolute_difference(q1, q2):
 
 def nbe(energy, inverse_temp):
     return 1. / (np.exp(inverse_temp * energy) - 1)
+
+
+def nfd(energy, inverse_temp):
+    return 1. / (np.exp(inverse_temp * energy) + 1)
+
+
+def thermal_state_operator(system_hamiltonian, inverse_temp):
+    exponential = np.exp(-inverse_temp * system_hamiltonian)
+    return exponential / exponential.tr()
